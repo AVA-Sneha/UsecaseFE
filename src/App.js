@@ -5,6 +5,7 @@ import axios from 'axios';
 function App() {
   return (
     <div className='backy'>
+      <img src={logo} alt='logo' />
       <div className="d-flex justify-content-center">
         <form onSubmit={(e) => login(e)}>
           <div className="form-group">
