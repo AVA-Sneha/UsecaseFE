@@ -32,4 +32,4 @@ jobs:
 
     - name: Apply Kubernetes manifests
       run: |
-         kubectl apply -f manifest.yaml
+         kubectl apply -f ./Frontend/manifest.yml
