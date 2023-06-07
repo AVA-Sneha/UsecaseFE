@@ -21,10 +21,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: custom-app-service
+  name: customer-app-service
 spec:
   selector:
-    app: custom-app
+    app: customer-app
   ports:
     - protocol: TCP
       port: 9000
