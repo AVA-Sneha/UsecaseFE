@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: customer app
+  name: customer-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: customer app
+      app: customer-app
   template:
     metadata:
       labels:
-        app: customer app
+        app: customer-app
     spec:
       containers:
-        - name: customer app
+        - name: customer-app
           image: acrca.azurecr.io/frontend-image:v1
           ports:
             - containerPort: 9000
@@ -21,10 +21,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: customer app
+  name: customer-app
 spec:
   selector:
-    app: customer app
+    app: customer-app
   ports:
     - protocol: TCP
       port: 9000
