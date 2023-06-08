@@ -16,7 +16,7 @@ spec:
         - name: customer-app
           image: acrca.azurecr.io/frontend-image:v1
           ports:
-            - containerPort: 8080
+            - containerPort: 9000
 ---
 
 apiVersion: v1
@@ -28,6 +28,6 @@ spec:
     app: customer-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 9000
+      targetPort: 9000
   type: LoadBalancer
