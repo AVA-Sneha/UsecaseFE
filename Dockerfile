@@ -8,8 +8,6 @@ RUN npm install --only=production
 
 WORKDIR /usr/src
 
-COPY --from=builder /usr/src/app/node_modules ./node_modules
-
 COPY . .
 
 EXPOSE 3000
