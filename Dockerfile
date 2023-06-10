@@ -8,4 +8,6 @@ RUN npm install js-yaml
 
 COPY . .
 
+EXPOSE 3000
+
 CMD ["npm", "run", "start"]
